@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Mulish:wght@400;700&family=Open+Sans:wght@400;700&display=swap");
+.page {
+  width: 1000px;
+  margin: 4.0625rem auto;
+}
+.page__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3.4375rem;
+}
+.page__menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.875rem;
+}
+.page__menu-list li {
+  font-family: "Mulish", sans-serif;
+  color: var(--blue-700);
+}
+.page__menu-list li a {
+  display: block;
+}
+.page__menu-list li a:hover {
+  font-weight: 700;
+}
+.page__logo {
+  position: relative;
+  z-index: 4;
+}
+.page__button-mobile {
+  font-size: 2rem;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 4;
+}
+.page__imagem-home {
+  display: flex;
+  justify-content: center;
+}
+.page__imagem-home img {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content__title {
+  max-width: 490px;
+  font-family: "Mulish", sans-serif;
+  font-size: 3.0625rem;
+  line-height: 3.5rem;
+  font-weight: normal;
+  color: var(--black);
+  margin-bottom: 2.5rem;
+  text-align: left;
+}
+.content__title span {
+  color: var(--blue-100);
+}
+.content__description {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+  color: var(--gray-100);
+  text-align: left;
+  max-width: 28.125rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.75rem;
+}
+.content__button {
+  width: 220px;
+  padding-inline: 2.3125rem;
+  padding-block: 1.0625rem;
+  background-color: var(--green-200);
+  color: var(--white);
+  gap: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25rem;
+  transition: filter 0.2s ease-in-out;
+}
+.content__button:hover {
+  filter: brightness(0.9);
+}
+.content__button svg {
+  width: 1.5rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 2.0625rem 0;
+}
+.footer__text-contact {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+  color: var(--black);
+  text-align: center;
+}
+.footer__balls {
+  position: absolute;
+  right: 0.625rem;
+  bottom: 0.625rem;
+}
+@media (min-width: 768px) {
+  .footer {
+    padding: 0;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html, button, input, textarea {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+:root {
+  --blue-100: rgba(137,197,204,1.0);
+  --blue-700: rgba(31,21,52,1.0);
+  --gray-100: rgba(125,121,135,1.0);
+  --green-200: rgba(105,185,157,1.0);
+  --white: rgba(255,255,255,1.0);
+  --black: rgba(0,0,0,1.0);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+.container {
+  max-width: 1008px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+@media (min-width: 768px) {
+  .container {
+    padding: 0;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.show {
+  overflow: hidden;
+}
+
+.bold {
+  font-weight: 700;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,136 @@
+.page {
+    width: 1000px;
+    margin: 4.0625rem auto;
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 3.4375rem;
+    }
+
+    &__menu-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 1.875rem;
+
+        li {
+            font-family: 'Mulish', sans-serif;
+            color: var(--blue-700);
+
+            a {
+                display: block;
+                &:hover {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    &__logo {
+        position: relative;
+        z-index: 4;
+    }
+
+    &__button-mobile {
+        font-size: 2rem;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 4;
+   
+    }
+
+    &__imagem-home {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 100%;
+        }
+}
+        }
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &__title {
+        max-width: 490px;
+
+        font-family: 'Mulish', sans-serif;
+        font-size: 3.0625rem;
+        line-height: 3.5rem;
+        font-weight: normal;
+        color: var(--black);
+        margin-bottom: 2.5rem;
+        text-align: left;
+        
+        span {
+            color: var(--blue-100);
+        }
+
+    
+    }
+
+    &__description {
+        font-family: 'Open Sans', sans-serif;
+        font-size: .875rem;
+        color: var(--gray-100);
+        text-align: left;
+        max-width: 28.125rem;
+        margin-bottom: 2.5rem;
+
+        line-height: 1.75rem;
+    }
+
+    &__button {
+        width: 220px;
+        padding-inline: 2.3125rem;
+        padding-block: 1.0625rem;
+        background-color: var(--green-200);
+        color: var(--white);
+        gap: .625rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: .25rem;
+        transition: filter .2s ease-in-out;
+        &:hover{    
+            filter: brightness(0.9);
+        }
+
+        svg {
+          width: 1.5rem;
+        }
+    }
+
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 2.0625rem 0;
+
+    &__text-contact {
+        font-family: 'Open Sans', sans-serif;
+        font-size: .875rem;
+        color: var(--black);
+        text-align: center;
+    }
+
+    &__balls {
+        position: absolute;
+        right: .625rem;
+        bottom: .625rem;
+    }
+
+    @media(min-width: 768px) {
+        padding: 0;
+    }
+}
